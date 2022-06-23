@@ -1,0 +1,15 @@
+header {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 40px;
+}
+
+ul {
+    list-style: none;
+    margin: auto;
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+}

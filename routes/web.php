@@ -14,5 +14,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    $data = [ 
+        'navItems' => [
+            ['item' => 'categories'],
+            ['item' => 'contacts'],
+            ['item' => 'about us'],
+            ['item' => 'news']
+        ],
+    ];
+    return view('home', $data);
 });
