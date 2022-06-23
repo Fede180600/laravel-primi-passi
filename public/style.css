@@ -6,7 +6,7 @@ h1 {
     margin-bottom: 40px;
 }
 
-ul {
+.nav-items {
     list-style: none;
     margin: auto;
     width: 60%;

@@ -11,11 +11,20 @@
     <header>
         <h1>Home</h1>
 
-        <ul>
-            @foreach ($navItems as $item)
-                <li><a href="">{{ $item['item'] }}</a></li>
-            @endforeach
+        <ul class="nav-items">
+            <li><a href="{{ route('categories') }}">Categories</a></li>
+            <li><a href="{{ route('contacts') }}">Contacts</a></li>
+            <li><a href="{{ route('about') }}">About US</a></li>
+            <li><a href="{{ route('news') }}">NEWS</a></li>
         </ul>
+
     </header>
+    <main>
+        @foreach ($articles as $item)
+            <h2>{{ $item['article_title'] }}</h2>
+            <p>{{ $item['article_content'] }}</p>
+        @endforeach
+    </main>
+    
 </body>
 </html>
